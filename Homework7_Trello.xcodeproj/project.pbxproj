@@ -9,19 +9,27 @@
 /* Begin PBXBuildFile section */
 		022838D623699B9B002A1165 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022838D523699B9B002A1165 /* AppDelegate.swift */; };
 		022838D823699B9B002A1165 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022838D723699B9B002A1165 /* ViewController.swift */; };
-		022838DB23699B9B002A1165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 022838D923699B9B002A1165 /* Main.storyboard */; };
 		022838DD23699B9D002A1165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 022838DC23699B9D002A1165 /* Assets.xcassets */; };
 		022838E023699B9D002A1165 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 022838DE23699B9D002A1165 /* LaunchScreen.storyboard */; };
+		022838EB2369C326002A1165 /* ISSDeskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022838EA2369C326002A1165 /* ISSDeskCell.swift */; };
+		0240E304236EBD3700C9E264 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0240E303236EBD3700C9E264 /* Model.swift */; };
+		0240E306236F07B500C9E264 /* DragCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0240E305236F07B500C9E264 /* DragCoordinator.swift */; };
+		0240E30A236F228500C9E264 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0240E309236F228500C9E264 /* AddTaskView.swift */; };
+		02CE0986236C409B00580D72 /* ISSAnotherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CE0985236C409B00580D72 /* ISSAnotherCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		022838D223699B9B002A1165 /* Homework7_Trello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework7_Trello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		022838D523699B9B002A1165 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		022838D723699B9B002A1165 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		022838DA23699B9B002A1165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		022838DC23699B9D002A1165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		022838DF23699B9D002A1165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		022838E123699B9D002A1165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		022838EA2369C326002A1165 /* ISSDeskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSDeskCell.swift; sourceTree = "<group>"; };
+		0240E303236EBD3700C9E264 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		0240E305236F07B500C9E264 /* DragCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragCoordinator.swift; sourceTree = "<group>"; };
+		0240E309236F228500C9E264 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		02CE0985236C409B00580D72 /* ISSAnotherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSAnotherCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +64,14 @@
 			children = (
 				022838D523699B9B002A1165 /* AppDelegate.swift */,
 				022838D723699B9B002A1165 /* ViewController.swift */,
-				022838D923699B9B002A1165 /* Main.storyboard */,
 				022838DC23699B9D002A1165 /* Assets.xcassets */,
 				022838DE23699B9D002A1165 /* LaunchScreen.storyboard */,
 				022838E123699B9D002A1165 /* Info.plist */,
+				02CE0985236C409B00580D72 /* ISSAnotherCollectionViewCell.swift */,
+				022838EA2369C326002A1165 /* ISSDeskCell.swift */,
+				0240E303236EBD3700C9E264 /* Model.swift */,
+				0240E305236F07B500C9E264 /* DragCoordinator.swift */,
+				0240E309236F228500C9E264 /* AddTaskView.swift */,
 			);
 			path = Homework7_Trello;
 			sourceTree = "<group>";
@@ -124,7 +136,6 @@
 			files = (
 				022838E023699B9D002A1165 /* LaunchScreen.storyboard in Resources */,
 				022838DD23699B9D002A1165 /* Assets.xcassets in Resources */,
-				022838DB23699B9B002A1165 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +146,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0240E304236EBD3700C9E264 /* Model.swift in Sources */,
+				0240E30A236F228500C9E264 /* AddTaskView.swift in Sources */,
 				022838D823699B9B002A1165 /* ViewController.swift in Sources */,
+				0240E306236F07B500C9E264 /* DragCoordinator.swift in Sources */,
 				022838D623699B9B002A1165 /* AppDelegate.swift in Sources */,
+				022838EB2369C326002A1165 /* ISSDeskCell.swift in Sources */,
+				02CE0986236C409B00580D72 /* ISSAnotherCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		022838D923699B9B002A1165 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				022838DA23699B9B002A1165 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		022838DE23699B9D002A1165 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
